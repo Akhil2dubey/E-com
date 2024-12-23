@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.ReviewTestcases">
+      <class name="Testcases.CompareProTestcase">
         <methods>
-          <include name="normasetup"/>
-          <include name="TestcaseResult"/>
+          <include name="closebrowser"/>
+          <include name="issuccess"/>
           <include name="afterMethodresult"/>
-          <include name="velidatepageloaded"/>
+          <include name="normalsetup"/>
         </methods>
-      </class> <!-- Testcases.ReviewTestcases -->
+      </class> <!-- Testcases.CompareProTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,19 +20,17 @@ public class BasetestCases {
 	WebDriver driver;
 	Properties p;
 
-	//@Parameters("browser")
+	
 	public void setup() throws IOException {
 		FileReader f = new FileReader(
 				"C:\\Users\\akhil dwivedi\\eclipse-workspace\\Komal project\\E-comarce.Newgen.com\\src\\test\\resources\\datapro");
 		p = new Properties();
 		p.load(f);
 
-
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("url"));
 
-		System.out.println("hey");
 	}
 }

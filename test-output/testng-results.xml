@@ -1,150 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="5" ignored="5" total="22" passed="10" failed="2" skipped="0">
+<testng-results retried="5" ignored="5" total="17" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-20T13:22:59 IST" name="Default suite" finished-at="2024-12-20T13:23:38 IST" duration-ms="38787">
+  <suite started-at="2024-12-24T00:22:18 IST" name="Default suite" finished-at="2024-12-24T00:22:27 IST" duration-ms="8875">
     <groups>
     </groups>
-    <test started-at="2024-12-20T13:22:59 IST" name="Default test" finished-at="2024-12-20T13:23:38 IST" duration-ms="38787">
-      <class name="Testcases.ReviewTestcases">
-        <test-method is-config="true" signature="normasetup()[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:22:59 IST" name="normasetup" finished-at="2024-12-20T13:23:04 IST" duration-ms="5253" status="PASS">
+    <test started-at="2024-12-24T00:22:18 IST" name="Default test" finished-at="2024-12-24T00:22:27 IST" duration-ms="8875">
+      <class name="Testcases.CompareProTestcase">
+        <test-method is-config="true" signature="normalsetup()[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:18 IST" name="normalsetup" finished-at="2024-12-24T00:22:23 IST" duration-ms="5549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- normasetup -->
-        <test-method signature="MyAccountTab()[pri:1, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:04 IST" name="MyAccountTab" finished-at="2024-12-20T13:23:05 IST" duration-ms="422" status="PASS">
+        </test-method> <!-- normalsetup -->
+        <test-method signature="loginAcount()[pri:1, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:23 IST" name="loginAcount" finished-at="2024-12-24T00:22:25 IST" duration-ms="1432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MyAccountTab -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:05 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:05 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- loginAcount -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:25 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:25 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MyAccountTab status=SUCCESS method=ReviewTestcases.MyAccountTab()[pri:1, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=loginAcount status=SUCCESS method=CompareProTestcase.loginAcount()[pri:1, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="CredentialsDetails()[pri:2, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:05 IST" name="CredentialsDetails" finished-at="2024-12-20T13:23:05 IST" duration-ms="212" status="PASS">
+        <test-method signature="PhoneTAB()[pri:2, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:25 IST" name="PhoneTAB" finished-at="2024-12-24T00:22:25 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CredentialsDetails -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:05 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:05 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- PhoneTAB -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:25 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CredentialsDetails status=SUCCESS method=ReviewTestcases.CredentialsDetails()[pri:2, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=PhoneTAB status=SUCCESS method=CompareProTestcase.PhoneTAB()[pri:2, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="loginClick()[pri:3, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:05 IST" name="loginClick" finished-at="2024-12-20T13:23:06 IST" duration-ms="441" status="PASS">
+        <test-method signature="AddPro1()[pri:3, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:25 IST" name="AddPro1" finished-at="2024-12-24T00:22:26 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginClick -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:06 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:06 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- AddPro1 -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginClick status=SUCCESS method=ReviewTestcases.loginClick()[pri:3, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=AddPro1 status=SUCCESS method=CompareProTestcase.AddPro1()[pri:3, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="Mp3Player()[pri:4, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:06 IST" name="Mp3Player" finished-at="2024-12-20T13:23:06 IST" duration-ms="604" status="PASS">
+        <test-method signature="AddPro2()[pri:4, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="AddPro2" finished-at="2024-12-24T00:22:26 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mp3Player -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:06 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:06 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- AddPro2 -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Mp3Player status=SUCCESS method=ReviewTestcases.Mp3Player()[pri:4, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=AddPro2 status=SUCCESS method=CompareProTestcase.AddPro2()[pri:4, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="sortpro()[pri:5, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:06 IST" name="sortpro" finished-at="2024-12-20T13:23:07 IST" duration-ms="413" status="PASS">
+        <test-method signature="coparebuttonclick()[pri:5, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="coparebuttonclick" finished-at="2024-12-24T00:22:26 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortpro -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- coparebuttonclick -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sortpro status=SUCCESS method=ReviewTestcases.sortpro()[pri:5, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=coparebuttonclick status=SUCCESS method=CompareProTestcase.coparebuttonclick()[pri:5, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="OpenProd()[pri:6, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="OpenProd" finished-at="2024-12-20T13:23:07 IST" duration-ms="551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenProd -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=OpenProd status=SUCCESS method=ReviewTestcases.OpenProd()[pri:6, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-        <test-method signature="ReviewTABSelect()[pri:7, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="ReviewTABSelect" finished-at="2024-12-20T13:23:07 IST" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReviewTABSelect -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ReviewTABSelect status=SUCCESS method=ReviewTestcases.ReviewTABSelect()[pri:7, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-        <test-method signature="EnteryourREVIEW()[pri:8, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="EnteryourREVIEW" finished-at="2024-12-20T13:23:07 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnteryourREVIEW -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EnteryourREVIEW status=SUCCESS method=ReviewTestcases.EnteryourREVIEW()[pri:8, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-        <test-method signature="velidatepageloaded()[pri:9, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="velidatepageloaded" finished-at="2024-12-20T13:23:07 IST" duration-ms="17" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method retried="true" signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="25" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[expected [iPod ] but found [iPod Classic]]]>
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [iPod ] but found [iPod Classic]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at Testcases.ReviewTestcases.velidatepageloaded(ReviewTestcases.java:69)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -173,59 +158,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- velidatepageloaded -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=velidatepageloaded status=FAILURE method=ReviewTestcases.velidatepageloaded()[pri:9, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=issuccess status=SKIP method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="SubmitReview()[pri:10, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="SubmitReview" finished-at="2024-12-20T13:23:07 IST" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SubmitReview -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:07 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SubmitReview status=SUCCESS method=ReviewTestcases.SubmitReview()[pri:10, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-        <test-method retried="true" signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:07 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:13 IST" duration-ms="5040" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method retried="true" signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="13" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -242,94 +214,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:13 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:13 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestcaseResult status=SKIP method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-        <test-method retried="true" signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:13 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:18 IST" duration-ms="5041" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -358,44 +245,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:18 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:18 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestcaseResult status=SKIP method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=issuccess status=SKIP method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method retried="true" signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:18 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:23 IST" duration-ms="5045" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method retried="true" signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="12" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -412,9 +301,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -443,33 +332,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method retried="true" signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:23 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:28 IST" duration-ms="5056" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=issuccess status=SKIP method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodresult -->
+        <test-method retried="true" signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="13" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -486,9 +388,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -517,44 +419,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:23 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:23 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestcaseResult status=SKIP method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=issuccess status=SKIP method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method retried="true" signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:28 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:33 IST" duration-ms="5035" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method retried="true" signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="12" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -571,9 +475,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -602,44 +506,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:28 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:28 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestcaseResult status=SKIP method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=issuccess status=SKIP method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:33 IST" name="TestcaseResult" finished-at="2024-12-20T13:23:38 IST" duration-ms="5051" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="issuccess" finished-at="2024-12-24T00:22:26 IST" duration-ms="11" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27]]>
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.']"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression ///h1[normalize-space()='Product Comparison'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '///h1[normalize-space()='Product Comparison']' is not a valid XPath expression."}
   (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bd4f97c123e799b93aaee567793bed27, findElement {value=//div[normalize-space()='Thank you for your review. It has been submitted to the webmaster for approval.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51229/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bd4f97c123e799b93aaee567793bed27
+Command: [9024ea6cb716d8c731202499bdfdc692, findElement {value=///h1[normalize-space()='Product Comparison'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\AKHILD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60413/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9024ea6cb716d8c731202499bdfdc692
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -656,9 +562,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at PageObject.GiveReview.SuccessMessage(GiveReview.java:117)
-at Testcases.ReviewTestcases.TestcaseResult(ReviewTestcases.java:78)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.CompareProduct.isDisplay(CompareProduct.java:90)
+at Testcases.CompareProTestcase.issuccess(CompareProTestcase.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -687,48 +593,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestcaseResult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:33 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:33 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- issuccess -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:26 IST" duration-ms="133" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestcaseResult status=SKIP method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=issuccess status=FAILURE method=CompareProTestcase.issuccess()[pri:6, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:38 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:38 IST" duration-ms="1" status="PASS">
+        <test-method signature="closebrowser()[pri:7, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:26 IST" name="closebrowser" finished-at="2024-12-24T00:22:27 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:27 IST" name="afterMethodresult" finished-at="2024-12-24T00:22:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestcaseResult status=FAILURE method=ReviewTestcases.TestcaseResult()[pri:11, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
+                <![CDATA[[TestResult name=closebrowser status=SUCCESS method=CompareProTestcase.closebrowser()[pri:7, instance:Testcases.CompareProTestcase@f1da57d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodresult -->
-        <test-method signature="clodebrowser()[pri:12, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:38 IST" name="clodebrowser" finished-at="2024-12-20T13:23:38 IST" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Testcases.CompareProTestcase@f1da57d]" started-at="2024-12-24T00:22:27 IST" name="closebrowser" finished-at="2024-12-24T00:22:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clodebrowser -->
-        <test-method is-config="true" signature="afterMethodresult(org.testng.ITestResult)[pri:0, instance:Testcases.ReviewTestcases@65f8f5ae]" started-at="2024-12-20T13:23:38 IST" name="afterMethodresult" finished-at="2024-12-20T13:23:38 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clodebrowser status=SUCCESS method=ReviewTestcases.clodebrowser()[pri:12, instance:Testcases.ReviewTestcases@65f8f5ae] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodresult -->
-      </class> <!-- Testcases.ReviewTestcases -->
+        </test-method> <!-- closebrowser -->
+      </class> <!-- Testcases.CompareProTestcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
