@@ -59,36 +59,9 @@ public class CompareProTestcase extends BasetestCases {
 	}
 
 	@AfterClass
-	@Test(priority=7)
+	@Test(priority = 7)
 	public void closebrowser() {
 		driver.quit();
-	}
-
-	@AfterMethod
-	public void afterMethodresult(ITestResult result) {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is passed ");
-		} else if (result.getStatus() == ITestResult.FAILURE) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is failed ");
-
-			// Capture screenshot for failed test case
-			{
-				try {
-					File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-					File screenshotDir = new File("screenshots");
-
-					// Save the screenshot with the test method name
-					File destination = new File(screenshotDir, result.getMethod().getMethodName() + ".png");
-					FileUtils.copyFile(screenshot, destination);
-					System.out.println("Screenshot saved at: " + destination.getAbsolutePath());
-				} catch (IOException e) {
-					System.err.println("Failed to save screenshot: " + e.getMessage());
-					e.printStackTrace();
-				}
-			}
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is skipped ");
-		}
 	}
 
 }

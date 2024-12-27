@@ -1,17 +1,25 @@
 package Testcases;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import com.beust.jcommander.Parameter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,17 +28,67 @@ public class BasetestCases {
 	WebDriver driver;
 	Properties p;
 
-	
-	public void setup() throws IOException {
+	@Parameters({ "browser" })
+	public void setup(String browser) throws IOException {
 		FileReader f = new FileReader(
 				"C:\\Users\\akhil dwivedi\\eclipse-workspace\\Komal project\\E-comarce.Newgen.com\\src\\test\\resources\\datapro");
 		p = new Properties();
 		p.load(f);
+		if (browser.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions coption = new ChromeOptions();
+			driver = new ChromeDriver(coption);
 
-		driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions foption = new FirefoxOptions();
+			driver = new FirefoxDriver(foption);
+
+		}
+		else
+		{
+			IllegalArgumentExceptoin("Invalid browser name "+ browser);
+		}
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("url"));
 
+	}
+
+	
+
+	private void IllegalArgumentExceptoin(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@AfterMethod
+	public void afterMethodresult(ITestResult result) {
+		if (result.getStatus() == ITestResult.SUCCESS) {
+			System.out.println(result.getMethod().getMethodName() + " testcase is passed ");
+		} else if (result.getStatus() == ITestResult.FAILURE) {
+			System.out.println(result.getMethod().getMethodName() + " testcase is failed ");
+
+			// Capture screenshot for failed test case
+			{
+				try {
+					File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+					File screenshotDir = new File("screenshots");
+
+					// Save the screenshot with the test method name
+					File destination = new File(screenshotDir, result.getMethod().getMethodName() + ".png");
+					FileUtils.copyFile(screenshot, destination);
+					System.out.println("Screenshot saved at: " + destination.getAbsolutePath());
+				} catch (IOException e) {
+					System.err.println("Failed to save screenshot: " + e.getMessage());
+					e.printStackTrace();
+				}
+			}
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			System.out.println(result.getMethod().getMethodName() + " testcase is skipped ");
+		}
 	}
 }
