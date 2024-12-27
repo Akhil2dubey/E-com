@@ -44,10 +44,8 @@ public class BasetestCases {
 			FirefoxOptions foption = new FirefoxOptions();
 			driver = new FirefoxDriver(foption);
 
-		}
-		else
-		{
-			IllegalArgumentExceptoin("Invalid browser name "+ browser);
+		} else {
+			IllegalArgumentExceptoin("Invalid browser name " + browser);
 		}
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -56,39 +54,9 @@ public class BasetestCases {
 
 	}
 
-	
-
 	private void IllegalArgumentExceptoin(String string) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-
-
-	@AfterMethod
-	public void afterMethodresult(ITestResult result) {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is passed ");
-		} else if (result.getStatus() == ITestResult.FAILURE) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is failed ");
-
-			// Capture screenshot for failed test case
-			{
-				try {
-					File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-					File screenshotDir = new File("screenshots");
-
-					// Save the screenshot with the test method name
-					File destination = new File(screenshotDir, result.getMethod().getMethodName() + ".png");
-					FileUtils.copyFile(screenshot, destination);
-					System.out.println("Screenshot saved at: " + destination.getAbsolutePath());
-				} catch (IOException e) {
-					System.err.println("Failed to save screenshot: " + e.getMessage());
-					e.printStackTrace();
-				}
-			}
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			System.out.println(result.getMethod().getMethodName() + " testcase is skipped ");
-		}
-	}
 }

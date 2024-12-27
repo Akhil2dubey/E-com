@@ -3,26 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.Screenshot">
+      <class name="Testcases.AddToCartTestcases">
         <methods>
           <include name="ComponetsTABOpen"/>
           <include name="Openitem"/>
-          <include name="normalsetup"/>
-          <include name="onTestFailure"/>
           <include name="selectthecolor"/>
           <include name="close"/>
           <include name="calenderupdate"/>
-          <include name="afterMethodresult"/>
+          <include name="handleResult"/>
           <include name="timeselect"/>
           <include name="filldatetime"/>
           <include name="textAea"/>
+          <include name="normalSetup"/>
           <include name="AddToProduct"/>
           <include name="checkthebox"/>
           <include name="selectQTY"/>
           <include name="UploadTheFile"/>
           <include name="EntrText"/>
         </methods>
-      </class> <!-- Testcases.Screenshot -->
+      </class> <!-- Testcases.AddToCartTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

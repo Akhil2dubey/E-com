@@ -35,6 +35,7 @@ System.out.println("Method skipped"+ result.getName());
 }
 
 @Override
+
 public void onTestStart(ITestResult result) {
 System.out.println("Method started"+ result.getName());
 

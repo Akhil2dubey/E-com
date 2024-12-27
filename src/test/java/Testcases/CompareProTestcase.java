@@ -11,6 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import PageObject.CompareProduct;
@@ -18,11 +19,14 @@ import PageObject.CompareProduct;
 public class CompareProTestcase extends BasetestCases {
 
 	CompareProduct c;
+	TestResultHandlerSS resultHandler;
 
 	@BeforeClass
-	public void normalsetup() throws IOException {
-		setup();
+	@Parameters("browser")
+	public void normalsetup(String browser) throws IOException {
+		setup(browser);
 		c = new CompareProduct(driver);
+		resultHandler = new TestResultHandlerSS(driver);
 
 	}
 
@@ -58,10 +62,17 @@ public class CompareProTestcase extends BasetestCases {
 		Assert.assertTrue(c.isDisplay());
 	}
 
-	@AfterClass
-	@Test(priority = 7)
-	public void closebrowser() {
-		driver.quit();
+	@AfterMethod
+	public void handleResult(ITestResult result) {
+		resultHandler.handleTestResult(result); // Delegate the handling to TestResultHandler
 	}
 
+	@AfterClass
+
+	public void close() {
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
+	}
 }

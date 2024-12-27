@@ -3,7 +3,9 @@ package Testcases;
 import java.awt.AWTException;
 import java.io.IOException;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,82 +14,97 @@ import PageObject.AddToCart;
 
 public class AddToCartTestcases extends BasetestCases {
 
-	AddToCart atc;
+	AddToCart atc1;
+
+	private TestResultHandlerSS resultHandler;
 
 	@BeforeClass
 	@Parameters("browser")
-	public void normalsetup(String browser) throws IOException {
+	public void normalSetup(String browser) throws IOException {
 		setup(browser); // Pass the browser name dynamically
-		atc = new AddToCart(driver);
+		atc1 = new AddToCart(driver);
+
+		// Initialize the TestResultHandler with WebDriver
+		resultHandler = new TestResultHandlerSS(driver);
 	}
 
 	@Test(priority = 1)
 	public void ComponetsTABOpen() {
-		atc.componentsTAB();
+		atc1.componentsTAB();
 	}
 
 	@Test(priority = 2)
 	public void Openitem() {
-		atc.OpenProduct();
+		atc1.OpenProduct();
 	}
 
 	@Test(priority = 3)
 	public void checkthebox() {
-		atc.checkboxCHECK();
+		atc1.checkboxCHECK();
 	}
 
 	@Test(priority = 4)
 	public void EntrText() {
-		atc.TextFill();
+		atc1.TextFill();
 	}
 
 	@Test(priority = 5)
 	public void selectthecolor() {
-		atc.SelectColor();
+		atc1.SelectColor();
 	}
 
 	@Test(priority = 6)
 	public void textAea() {
-		atc.Textarea();
+		atc1.Textarea();
 	}
 
 	@Test(priority = 7)
 	public void UploadTheFile() throws AWTException {
 		String filePath = "C:\\Users\\akhil dwivedi\\Desktop\\2 (1).jpg";
-		atc.FileUpLoad(filePath);
+		atc1.FileUpLoad(filePath);
 	}
 
 	@Test(priority = 8)
 	public void calenderupdate() {
-		atc.Clndr();
+		atc1.Clndr();
 	}
 
 	@Test(priority = 9)
 	public void timeselect() {
-		atc.TimeInput();
+		atc1.TimeInput();
 	}
 
 	@Test(priority = 10)
 	public void filldatetime() {
-		atc.DateTimeInput();
+		atc1.DateTimeInput();
 	}
 
 	@Test(priority = 11)
 	public void selectQTY() {
-		atc.enterQTY();
+		atc1.enterQTY();
 	}
 
 	@Test(priority = 12)
 	public void AddToProduct() {
-		atc.AddClick();
+		atc1.AddClick();
 	}
+
+	@AfterMethod
+	public void handleResult(ITestResult result) {
+		resultHandler.handleTestResult(result); // Delegate the handling to TestResultHandler
+	}
+
 	@AfterClass
 	public void close() {
-		driver.quit();
-	}
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
 //	@DataProvider(name="imageData")
 //	public Object[] data() {
 //		return new Object[] {"C:\\Users\\akhil dwivedi\\Desktop"};
 //		
 //	}
+	}
+
 }

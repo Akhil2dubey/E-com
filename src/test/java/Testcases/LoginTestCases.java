@@ -3,10 +3,15 @@ package Testcases;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameter;
 import com.github.dockerjava.api.model.Driver;
 
 import PageObject.Login;
@@ -14,11 +19,14 @@ import PageObject.Login;
 public class LoginTestCases extends BasetestCases {
 
 	Login l;
+	TestResultHandlerSS testhandler;
 
 	@BeforeClass
-	public void setupTest() throws IOException {
-		setup(); // Initializes WebDriver and other configurations
+	@Parameters("browser")
+	public void setupTest(String browser) throws IOException {
+		setup(browser); // Initializes WebDriver and other configurations
 		l = new Login(driver);
+		testhandler = new TestResultHandlerSS(driver);
 	}
 
 	@Test(priority = 1)
@@ -44,8 +52,8 @@ public class LoginTestCases extends BasetestCases {
 		String email = email1;
 		String password = password1;
 		l.credentials(email, password);
-		//Assert.assertTrue(l.SuccessMessage());
-		System.out.println("valis credentials "+ email1 + password1);
+		// Assert.assertTrue(l.SuccessMessage());
+		System.out.println("valis credentials " + email1 + password1);
 
 	}
 
@@ -54,8 +62,13 @@ public class LoginTestCases extends BasetestCases {
 		l.Logoutreg(); // Perform logout action
 	}
 
-	@Test(priority = 5)
-	public void closeBrowser() {
-		driver.close(); // Close the browser
+	@AfterMethod
+	public void TestRsult(ITestResult result) {
+		testhandler.handleTestResult(result);
+	}
+
+	@AfterClass
+	public void close() {
+		driver.quit();
 	}
 }

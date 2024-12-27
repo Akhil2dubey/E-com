@@ -5,7 +5,11 @@ import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import PageObject.RegisterLogin;
@@ -13,11 +17,15 @@ import PageObject.RegisterLogin;
 public class RegisterTestcases extends BasetestCases {
 
 	RegisterLogin rg;
+	TestResultHandlerSS Testhandler;
 
 	@BeforeClass
-	public void normalsetup() throws IOException {
-		setup();
+	@Parameters("browser")
+	public void normalsetup(String browser) throws IOException {
+		setup(browser);
 		rg = new RegisterLogin(driver);
+		Testhandler = new TestResultHandlerSS(driver);
+
 	}
 
 	@Test(priority = 1)
@@ -45,14 +53,25 @@ public class RegisterTestcases extends BasetestCases {
 		rg.Subclick();
 	}
 
-	@Test(priority = 6)
+	@Test(retryAnalyzer = retryfailedcases.class, priority = 6)
 	public void issucces() {
 		Assert.assertTrue(rg.isDisplay());
 	}
-	@Test(dependsOnMethods= {"issucces"})
+
+	@Test(dependsOnMethods = { "issucces" })
 	public void login() throws InterruptedException {
 		rg.login();
-		
+
+	}
+
+	@AfterMethod
+	public void testhandle(ITestResult result) {
+		Testhandler.handleTestResult(result);
+	}
+
+	@AfterClass
+	public void close() {
+		driver.quit();
 	}
 
 }
