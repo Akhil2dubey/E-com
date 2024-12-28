@@ -4,29 +4,25 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Testcases.ReviewTestcases">
+      <class name="Testcases.CurrencyTestcases">
         <methods>
-          <include name="normasetup"/>
-          <include name="close"/>
-          <include name="TestcaseResult"/>
-          <include name="velidatepageloaded"/>
-          <include name="testhandler"/>
+          <include name="testalltest"/>
+          <include name="sucessResult"/>
+          <include name="normalsetup"/>
         </methods>
-      </class> <!-- Testcases.ReviewTestcases -->
+      </class> <!-- Testcases.CurrencyTestcases -->
     </classes>
   </test> <!-- chromeTest(failed) -->
   <test thread-count="5" name="firefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="Testcases.ReviewTestcases">
+      <class name="Testcases.CurrencyTestcases">
         <methods>
-          <include name="normasetup"/>
-          <include name="close"/>
-          <include name="TestcaseResult"/>
-          <include name="velidatepageloaded"/>
-          <include name="testhandler"/>
+          <include name="testalltest"/>
+          <include name="sucessResult"/>
+          <include name="normalsetup"/>
         </methods>
-      </class> <!-- Testcases.ReviewTestcases -->
+      </class> <!-- Testcases.CurrencyTestcases -->
     </classes>
   </test> <!-- firefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

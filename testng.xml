@@ -4,13 +4,13 @@
   <test thread-count="5" name="chromeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="Testcases.ReviewTestcases"/>
+      <class name="Testcases.CurrencyTestcases"/>
     </classes>
   </test> <!-- Test -->
     <test thread-count="5" name="firefoxTest">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="Testcases.ReviewTestcases"/>
+      <class name="Testcases.CurrencyTestcases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

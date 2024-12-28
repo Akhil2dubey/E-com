@@ -6,18 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Currency extends BaseObjectPage {
 
 	WebDriverWait wait;
-	Currency(WebDriver driver) {
+
+	public Currency(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 	}
-	
+
 	@FindBy(xpath = "//a[@title='My Account']")
 	WebElement myAC;
 
@@ -32,14 +34,48 @@ public class Currency extends BaseObjectPage {
 
 	@FindBy(xpath = "//input[@value='Login']")
 	WebElement loginbtn;
-	
-	@FindBy(xpath="//form[contains(@action, 'ncart/index.php?route=common/currency/currency')]")
+
+	@FindBy(xpath = "//form[contains(@action, 'ncart/index.php?route=common/currency/currency')]")
 	WebElement currency;
-	
-	@FindBy(xpath="//button[@name='EUR']")
+
+	@FindBy(xpath = "//button[@name='EUR']")
 	WebElement Euro;
 	
-	@FindBy(xpath="//p[contains(text(),'96.66€')]")
+	@FindBy(xpath="//img[@title='naveenopencart']")
+	WebElement homepage;
+
+	@FindBy(xpath = "//p[contains(text(),'96.66€')]")
 	WebElement success;
+
+	public void MyACCOUNT() {
+		wait.until(ExpectedConditions.visibilityOf(myAC));
+		myAC.click();
+		login.click();
+
+	}
+
+	public void EnterCredentials() {
+		loginemail.sendKeys("asdfghj@gmail.com");
+		loginpassword.sendKeys("ram@123");
+	}
+
+	public void clickLogin() {
+		loginbtn.click();
+	}
+	public void currencyicon() {
+		wait.until(ExpectedConditions.visibilityOf(currency));
+		currency.click();
+	}
+	public void euroselect() {
+		Euro.click();
+	}
+	public void clickhomepage() {
+		homepage.click();
+	}
+	public boolean isdisplay() {
+		return success.isDisplayed();
+		
+	}
+	
 
 }
